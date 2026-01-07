@@ -132,6 +132,8 @@ a:hover {
 .et-hero-tabs-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -139,6 +141,7 @@ a:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: var(--cream);
     z-index: 1000;
+    padding: 0 2rem;
 }
 
 .et-hero-tabs-container--top {
@@ -151,7 +154,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    padding: 0 1.5rem;
     color: var(--deep-green);
     letter-spacing: 0.1rem;
     transition: all 0.5s ease;
@@ -183,24 +186,27 @@ a:hover {
 .nav-links {
     display: flex;
     flex-direction: row;
-    flex: 1;
     height: 100%;
     position: relative;
+    gap: 1rem;
 }
 
-/* Mobile Logo */
-.mobile-logo {
-    display: none;
+/* Nav Logo */
+.nav-logo {
+    display: flex;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--deep-green);
-    padding: 0 1rem;
     white-space: nowrap;
 }
 
-.mobile-logo span {
+.nav-logo span {
     color: var(--terracotta);
+}
+
+.nav-logo:hover {
+    color: var(--deep-green);
 }
 
 /* Hamburger Menu */
@@ -255,7 +261,7 @@ a:hover {
         padding: 0 10px;
     }
     
-    .mobile-logo {
+    .nav-logo {
         display: flex;
     }
     
