@@ -3,10 +3,17 @@
   publish = "."
   command = ""
 
-[[redirects]]
-  from = "/*"
-  to = "/under_construction.html"
-  status = 200
+# Production branch (main)
+[context.production]
+  publish = "."
+
+# Feature branch deploys (for testing)
+[context.branch-deploy]
+  publish = "."
+
+# Deploy previews for all branches except main
+[context.deploy-preview]
+  publish = "."
 
 [build.environment]
   NODE_VERSION = "18"
