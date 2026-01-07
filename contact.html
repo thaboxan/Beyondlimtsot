@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Beyond Limits OT - Book an appointment for occupational therapy services in East London, South Africa.">
+    <meta name="keywords" content="Contact, Occupational Therapy, OT, East London, South Africa, Appointment">
+    <title>Contact Us | Beyond Limits OT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">Beyond Limits <span>OT</span></div>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Full Section -->
+    <section class="contact-full">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section" id="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <div class="form-message" id="form-message"></div>
+                    <form id="contactForm" action="https://formsubmit.co/info@beyondlimitsot.co.za" method="POST">
+                        <!-- Honeypot for spam prevention -->
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- Disable captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Success page redirect -->
+                        <input type="hidden" name="_next" value="https://beyondlimitsot.co.za/contact.html?success=true">
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #F5EBD8; border-radius: 10px; font-size: 1rem; font-family: inherit;">
+                                <option value="">Select a service</option>
+                                <option value="Pediatric Therapy">Pediatric Therapy</option>
+                                <option value="Adult Rehabilitation">Adult Rehabilitation</option>
+                                <option value="Workplace Wellness">Workplace Wellness</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-detail-item">
+                        <div class="icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@beyondlimitsot.co.za">info@beyondlimitsot.co.za</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>East London, South Africa</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>[Phone number coming soon]</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="icon">🕐</div>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: By appointment<br>
+                            Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106842.89855955818!2d27.82833655!3d-33.01529945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e63d7c1a9e8e5a5%3A0x3b0c8e8a5e8c1234!2sEast%20London%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Beyond Limits OT Location - East London, South Africa">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Beyond Limits OT</h4>
+                    <p>Empowering individuals of all ages to regain independence and thrive in their communities through compassionate occupational therapy.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@beyondlimitsot.co.za</li>
+                        <li>📍 East London, South Africa</li>
+                        <li>📞 [Phone number coming soon]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Beyond Limits OT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
