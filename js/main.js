@@ -202,27 +202,31 @@ class StickyNavigation {
         this.tabs = document.querySelectorAll('.et-hero-tab');
         this.slider = document.querySelector('.et-hero-tab-slider');
         
-        if (!this.heroTabs || !this.tabContainer) return;
+        // Initialize even without hero section (for other pages)
+        if (!this.tabContainer) return;
         
         this.init();
     }
     
     init() {
-        // Set active tab based on current page
+        // Set active tab based on current page or existing active class
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
         this.tabs.forEach(tab => {
-            if (tab.getAttribute('href') === currentPage) {
+            if (tab.classList.contains('active') || tab.getAttribute('href') === currentPage) {
                 tab.classList.add('active');
                 this.currentTab = tab;
             }
         });
         
-        // Initial slider position
-        this.setSliderCss();
+        // Initial slider position with small delay to ensure DOM is ready
+        setTimeout(() => this.setSliderCss(), 10);
         
         // Event listeners
-        window.addEventListener('scroll', () => this.onScroll(), { passive: true });
+        if (this.heroTabs) {
+            window.addEventListener('scroll', () => this.onScroll(), { passive: true });
+        }
         window.addEventListener('resize', () => this.onResize(), { passive: true });
+        window.addEventListener('load', () => this.setSliderCss());
         
         // Tab hover effects for slider
         this.tabs.forEach(tab => {
@@ -241,8 +245,13 @@ class StickyNavigation {
     
     onTabHover(tab) {
         if (this.slider && tab) {
+            const navLinks = document.querySelector('.nav-links');
+            const navLinksRect = navLinks ? navLinks.getBoundingClientRect() : null;
+            const tabRect = tab.getBoundingClientRect();
+            
             const width = tab.offsetWidth;
-            const left = tab.offsetLeft;
+            const left = navLinksRect ? tabRect.left - navLinksRect.left : tab.offsetLeft;
+            
             this.slider.style.width = width + 'px';
             this.slider.style.left = left + 'px';
         }
@@ -267,8 +276,12 @@ class StickyNavigation {
         let left = 0;
         
         if (this.currentTab) {
+            const navLinks = document.querySelector('.nav-links');
+            const navLinksRect = navLinks ? navLinks.getBoundingClientRect() : null;
+            const tabRect = this.currentTab.getBoundingClientRect();
+            
             width = this.currentTab.offsetWidth;
-            left = this.currentTab.offsetLeft;
+            left = navLinksRect ? tabRect.left - navLinksRect.left : this.currentTab.offsetLeft;
         }
         
         this.slider.style.width = width + 'px';

@@ -148,6 +148,7 @@ a:hover {
     position: fixed;
     top: 0;
     bottom: auto;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 }
 
 .et-hero-tab {
@@ -173,6 +174,10 @@ a:hover {
     color: var(--terracotta);
 }
 
+.et-hero-tab.active:hover {
+    color: var(--cream);
+}
+
 .et-hero-tab-slider {
     position: absolute;
     bottom: 0;
@@ -196,9 +201,11 @@ a:hover {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--deep-green);
     white-space: nowrap;
+    font-family: 'Exo 2', sans-serif;
+    letter-spacing: 0.02em;
 }
 
 .nav-logo span {
@@ -301,6 +308,36 @@ a:hover {
     
     .et-hero-tab-slider {
         display: none;
+    }
+    
+    /* Center buttons on mobile */
+    .hero-content,
+    .et-hero-tabs .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .animated-button {
+        margin: 0 auto;
+    }
+    
+    .btn,
+    .btn-primary,
+    .btn-secondary,
+    .ripple-button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .about-preview .btn,
+    .service-card .btn,
+    .profile-text .btn,
+    .cta-section .btn,
+    .cta-section .animated-button {
+        margin: 0 auto;
     }
 }
 
