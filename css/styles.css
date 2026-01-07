@@ -1338,7 +1338,18 @@ footer {
         font-size: 1.5rem;
     }
     
-    .page-header {\n        margin-top: 60px;\n        padding: 6rem 1rem 3rem;\n    }\n    \n    .contact-full {\n        padding: 2rem 0;\n    }\n    \n    .contact-form-section {\n        max-width: 100%;\n    }
+    .page-header {
+        margin-top: 60px;
+        padding: 6rem 1rem 3rem;
+    }
+    
+    .contact-full {
+        padding: 2rem 0;
+    }
+    
+    .contact-form-section {
+        max-width: 100%;
+    }
 
     .services-grid {
         grid-template-columns: 1fr;
