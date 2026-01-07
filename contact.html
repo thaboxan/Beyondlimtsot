@@ -9,27 +9,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <div class="logo-text">Beyond Limits <span>OT</span></div>
-            </a>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- Sticky Nav -->
+    <div class="et-hero-tabs-container et-hero-tabs-container--top">
+        <a href="index.html" class="mobile-logo">Beyond Limits <span>OT</span></a>
+        <div class="nav-links">
+            <a class="et-hero-tab" href="index.html">Home</a>
+            <a class="et-hero-tab" href="about.html">About</a>
+            <a class="et-hero-tab" href="services.html">Services</a>
+            <a class="et-hero-tab active" href="contact.html">Contact</a>
+            <span class="et-hero-tab-slider"></span>
         </div>
-    </header>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
 
     <!-- Page Header -->
     <section class="page-header">
@@ -81,7 +76,16 @@
                             <label for="message">Your Message *</label>
                             <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="animated-button btn-alt">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                            </svg>
+                            <span class="text">Send Message</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                            </svg>
+                        </button>
                     </form>
                 </div>
 
