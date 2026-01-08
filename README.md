@@ -17,7 +17,6 @@ Beyond Limits OT is dedicated to providing compassionate, culturally sensitive o
 - **Modern UI/UX** - Clean, professional design with smooth animations
 - **Sticky Navigation** - Smart navigation bar with animated slider effect
 - **WhatsApp Integration** - Floating WhatsApp button for quick client inquiries
-- **Back to Top Button** - Smooth scroll navigation
 - **Contact Form** - Integrated with FormSubmit for email notifications
 - **Parallax Effects** - Engaging scroll animations
 - **Accessibility** - ARIA labels and semantic HTML
