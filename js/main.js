@@ -1,6 +1,12 @@
 // Beyond Limits OT - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Dynamic Year in Footer
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+
     // Mobile Navigation Toggle for Sticky Nav
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
