@@ -99,7 +99,7 @@ Beyondlimtsot/
 
 ## Deployment
 
-The site is deployed on **Netlify** with automatic deployments from the main branch.
+Hosted on Netlify with Cloudflare DNS
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/beyondlimitsot/deploys)
 
