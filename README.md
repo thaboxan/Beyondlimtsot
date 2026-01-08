@@ -101,7 +101,6 @@ Beyondlimtsot/
 
 Hosted on Netlify with Cloudflare DNS
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/beyondlimitsot/deploys)
 
 ## License
 
