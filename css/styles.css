@@ -713,8 +713,8 @@ nav ul li a.active {
 }
 
 .animated-button:hover .circle {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   opacity: 1;
 }
 
@@ -733,14 +733,23 @@ nav ul li a.active {
 }
 
 .animated-button.btn-alt:hover {
+  box-shadow: 0 0 0 12px transparent;
   color: var(--cream);
+  border-radius: 8px;
 }
 
 .animated-button.btn-alt:hover svg {
   fill: var(--cream);
 }
 
+.animated-button.btn-alt:hover .circle {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+}
+
 .animated-button.btn-alt:active {
+  scale: 0.95;
   box-shadow: 0 0 0 4px var(--terracotta);
 }
 
@@ -1219,10 +1228,70 @@ footer {
     line-height: 1.8;
 }
 
+/* Footer Affiliations */
+.footer-affiliations {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+}
+
+.footer-affiliations h4 {
+    color: var(--terracotta);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.affiliation-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.affiliation-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+.affiliation-item:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+.affiliation-item img {
+    height: 60px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.affiliation-item:hover img {
+    transform: scale(1.05);
+}
+
+.affiliation-item span {
+    color: var(--cream);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
 }
 
 .footer-bottom p {
