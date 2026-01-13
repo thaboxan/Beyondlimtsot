@@ -468,31 +468,31 @@ document.addEventListener('DOMContentLoaded', function() {
 // ====================================
 // BACK TO TOP BUTTON (Standalone)
 // ====================================
-document.addEventListener('DOMContentLoaded', function() {
-    const backToTopBtn = document.getElementById('backToTop');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const backToTopBtn = document.getElementById('backToTop');
     
-    if (backToTopBtn) {
-        // Show/hide button based on scroll position
-        function toggleBackToTopBtn() {
-            if (window.pageYOffset > 100) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        }
+//     if (backToTopBtn) {
+//         // Show/hide button based on scroll position
+//         function toggleBackToTopBtn() {
+//             if (window.pageYOffset > 100) {
+//                 backToTopBtn.classList.add('visible');
+//             } else {
+//                 backToTopBtn.classList.remove('visible');
+//             }
+//         }
         
-        // Initial check
-        toggleBackToTopBtn();
+//         // Initial check
+//         toggleBackToTopBtn();
         
-        // Check on scroll
-        window.addEventListener('scroll', toggleBackToTopBtn, { passive: true });
+//         // Check on scroll
+//         window.addEventListener('scroll', toggleBackToTopBtn, { passive: true });
         
-        // Scroll to top when clicked
-        backToTopBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-});
+//         // Scroll to top when clicked
+//         backToTopBtn.addEventListener('click', function() {
+//             window.scrollTo({
+//                 top: 0,
+//                 behavior: 'smooth'
+//             });
+//         });
+//     }
+// });
