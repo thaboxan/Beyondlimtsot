@@ -265,10 +265,8 @@ class StickyNavigation {
     
     checkTabContainerPosition() {
         if (!this.heroTabs || !this.tabContainer) return;
-        
-        const offset = this.heroTabs.offsetTop + this.heroTabs.offsetHeight - this.tabContainerHeight;
-        
-        if (window.pageYOffset > offset) {
+
+        if (window.pageYOffset > 80) {
             this.tabContainer.classList.add('et-hero-tabs-container--top');
         } else {
             this.tabContainer.classList.remove('et-hero-tabs-container--top');
